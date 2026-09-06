@@ -85,3 +85,16 @@ button,input,select{font:12px Arial,"宋体",SimSun,sans-serif}
  .migration-records td:nth-child(1):before{content:"原流水：";font-weight:bold}.migration-records td:nth-child(2):before{content:"物品：";font-weight:bold}.migration-records td:nth-child(3):before{content:"状态/记录：";font-weight:bold}
  .sys-form input{max-width:68vw}.lost-query input{max-width:62vw}
 }
+
+/* player-view refinement: critical service logs read like a paper ledger instead of a wide data grid */
+.ledger-entries{border:1px solid #9a9a88;background:#fffef7;margin:9px 0 12px;font-family:"宋体",SimSun,serif}
+.ledger-entry{display:grid;grid-template-columns:72px 1fr;border-bottom:1px solid #c8c5b6;min-height:34px}
+.ledger-entry:last-child{border-bottom:0}
+.ledger-time{padding:7px 8px;background:#ebe8dc;border-right:1px solid #b8b3a5;font:12px/1.6 "Courier New",monospace;color:#555;text-align:center}
+.ledger-text{padding:7px 10px;line-height:1.72;color:#222}
+@media(max-width:760px){
+ .ledger-entry{grid-template-columns:58px 1fr;min-height:40px}
+ .ledger-time{padding:8px 4px;font-size:11px}
+ .ledger-text{padding:8px 9px;font-size:13px;line-height:1.65}
+}
+.cache-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.cache-head a,.cache-back a{color:#d7e8ff}.cache-back{white-space:nowrap}.win-toolbar a{color:#143f72;text-decoration:none}.win-toolbar a:hover{text-decoration:underline}
